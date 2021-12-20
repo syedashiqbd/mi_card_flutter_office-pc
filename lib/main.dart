@@ -1,34 +1,29 @@
 import 'package:flutter/material.dart';
 
-void main() {
+void main (){
   runApp(MyApp());
 }
 
-
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.teal,
-        appBar:AppBar(title: Center(child: Text('Bismillahir Rahmanir Rahim')),),
-        body:SafeArea(
-          child: Center(
-            child: Container(
-              height: 150.0,
-              width: 200.0,
-              color: Colors.white,
-              child:Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."),
-            ),
-          ),
-        ),
+    return MaterialApp(home: Scaffold(
+      appBar: AppBar(
+      backgroundColor: Colors.blue,
+      title: Center(child: Text('Syed Ashiqur Rahman'),),),
+      body: SafeArea(
+        child: Container(
+          height: 200.0,
+          width: 200.0,
+          margin: EdgeInsets.fromLTRB(10.0, 20.0, 25.0, 30.0),
+          padding: EdgeInsets.all(15),
+          color: Colors.redAccent,
+          child: Text("Hello. This is Syed Ashiq. I'm learning mobile application development. My chosing programe is Flutter framwork by DART"),
+    ),
       ),
+    )
     );
   }
 }
-
-//Flutter 2.5.3 • channel stable
-//Dart SDK version: 2.14.4 (stable)
-//Home PC
-//Flutter 2.8.0 • channel stable
-//Dart SDK version: 2.15.1 (stable)
