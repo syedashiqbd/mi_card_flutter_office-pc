@@ -11,19 +11,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(home: Scaffold(
       appBar: AppBar(
-      backgroundColor: Colors.blue,
       title: Center(child: Text('Syed Ashiqur Rahman'),),),
       body: SafeArea(
         child: Container(
           height: 200.0,
           width: 200.0,
-          margin: EdgeInsets.fromLTRB(10.0, 20.0, 25.0, 30.0),
-          padding: EdgeInsets.all(15),
+          margin: EdgeInsets.only(top:20.0),
+          padding: EdgeInsets.only(left: 15, top: 20),
           color: Colors.redAccent,
           child: Text("Hello. This is Syed Ashiq. I'm learning mobile application development. My chosing programe is Flutter framwork by DART"),
-    ),
-      ),
-    )
+          ),
+        ),
+      )
     );
   }
 }
