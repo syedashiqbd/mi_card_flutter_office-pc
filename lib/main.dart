@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
             ],
         ),
       )
-    );
+    ));
   }
 }
 //Office pc need to update Flutter and Dart Version
