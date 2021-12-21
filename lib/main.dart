@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main (){
+void main() {
   runApp(MyApp());
 }
 
@@ -10,54 +10,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-          
-      appBar: AppBar(
-        backgroundColor: Colors.blueGrey[900],
-        title: Center(
-          child: Text('Syed Ashiqur Rahman'),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Bismillah'),
         ),
       ),
-      backgroundColor:Colors.teal,
-      body: SafeArea(
-        child: Row(
-          mainAxisAlignment:MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Container(
-              height: 100.0,
-              width: 100.0,
-              color: Colors.red,
-            ),
-            Container(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                  Container(
-                  height: 100.0,
-                  width: 100.0,
-                  color: Colors.yellow,
-                ),
-                SizedBox(
-                  height: 50.0,
-                ),
-                  Container(
-                  height: 100.0,
-                  width: 100.0,
-                  color: Colors.green[400],
-                ),
-              ],),
-            ),
-            Container(
-              height: 100.0,
-              width: 100.0,
-              color: Colors.blue,
-            ),
-          ],
-        ),
-      )
-    ),
     );
   }
 }
-
