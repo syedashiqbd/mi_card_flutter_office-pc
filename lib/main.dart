@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
-void main() {
+void main (){
   runApp(MyApp());
 }
 
-
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
@@ -20,12 +22,23 @@ class MyApp extends StatelessWidget {
               color: Colors.white,
               child:Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."),
             ),
+=======
+    return MaterialApp(home: Scaffold(
+      appBar: AppBar(
+      title: Center(child: Text('Syed Ashiqur Rahman'),),),
+      body: SafeArea(
+        child: Container(
+          height: 200.0,
+          width: 200.0,
+          margin: EdgeInsets.only(top:20.0),
+          padding: EdgeInsets.only(left: 15, top: 20),
+          color: Colors.redAccent,
+          child: Text("Hello. This is Syed Ashiq. I'm learning mobile application development. My chosing programe is Flutter framwork by DART"),
+>>>>>>> 6948d374dae448729651768f3a4861c704c7dd9a
           ),
         ),
-      ),
+      )
     );
   }
 }
-
-//Flutter 2.5.3 • channel stable
-//Dart SDK version: 2.14.4 (stable)
+//Office pc need to update Flutter and Dart Version
