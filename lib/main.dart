@@ -12,11 +12,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
           
-      // appBar: AppBar(
-      //   title: Center(
-      //     child: Text('Syed Ashiqur Rahman'),
-      //   ),
-      // ),
+      appBar: AppBar(
+        backgroundColor: Colors.blueGrey[900],
+        title: Center(
+          child: Text('Syed Ashiqur Rahman'),
+        ),
+      ),
       backgroundColor:Colors.teal,
       body: SafeArea(
         child: Row(
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
                   color: Colors.yellow,
                 ),
                 SizedBox(
-                  height: 20.0,
+                  height: 50.0,
                 ),
                   Container(
                   height: 100.0,
