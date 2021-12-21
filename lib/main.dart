@@ -11,20 +11,47 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-      appBar: AppBar(
-        title: Center(
-          child: Text('Syed Ashiqur Rahman'),
-        ),
-      ),
+          
+      // appBar: AppBar(
+      //   title: Center(
+      //     child: Text('Syed Ashiqur Rahman'),
+      //   ),
+      // ),
+      backgroundColor:Colors.teal,
       body: SafeArea(
-        child: Container(
-          height: 150.0,
-          width: 300.0,
-          margin: EdgeInsets.only(top: 20.0),
-          padding: EdgeInsets.all(50.0),
-          color: Colors.blueGrey[300],
-          child: Text(
-              "Hello. This is Syed Ashiq. I'm learning mobile application development. My chosing programe is Flutter framwork by DART."),
+        child: Row(
+          mainAxisAlignment:MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Container(
+              height: 100.0,
+              width: 100.0,
+              color: Colors.red,
+            ),
+            Container(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                  Container(
+                  height: 100.0,
+                  width: 100.0,
+                  color: Colors.yellow,
+                ),
+                  Container(
+                  height: 100.0,
+                  width: 100.0,
+                  color: Colors.green[400],
+                ),
+              
+              ],),
+              
+            ),
+            Container(
+              height: 100.0,
+              width: 100.0,
+              color: Colors.blue,
+            ),
+            ],
         ),
       ),
     ));
