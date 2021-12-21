@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() {
+void main (){
   runApp(MyApp());
 }
 
@@ -54,8 +54,8 @@ class MyApp extends StatelessWidget {
             ),
             ],
         ),
-      ),
-    ),
+      )
     );
   }
 }
+//Office pc need to update Flutter and Dart Version
