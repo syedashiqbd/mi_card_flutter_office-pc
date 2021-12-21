@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(home: Scaffold(
       appBar: AppBar(
-      title: Center(child: Text('Bismillahir Rahmanir Rahim'),),),
+      title: Center(child: Text('Syed Ashiqur Rahman'),),),
       body: SafeArea(
         child: Container(
           height: 200.0,
