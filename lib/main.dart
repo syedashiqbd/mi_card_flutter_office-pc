@@ -52,10 +52,11 @@ class MyApp extends StatelessWidget {
               width: 100.0,
               color: Colors.blue,
             ),
-            ],
+          ],
         ),
       )
+    ),
     );
   }
 }
-//Office pc need to update Flutter and Dart Version
+
