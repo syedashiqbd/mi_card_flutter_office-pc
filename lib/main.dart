@@ -14,6 +14,9 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Bismillah'),
         ),
+        body: Container(
+          child: Image(image: AssetImage('images/ashiq.png'),),
+        ),
       ),
     );
   }
