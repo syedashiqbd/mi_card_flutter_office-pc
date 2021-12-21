@@ -14,12 +14,12 @@ class MyApp extends StatelessWidget {
       title: Center(child: Text('Syed Ashiqur Rahman'),),),
       body: SafeArea(
         child: Container(
-          height: 200.0,
-          width: 200.0,
-          margin: EdgeInsets.only(top:20.0),
-          padding: EdgeInsets.only(left: 15, top: 20),
+          // height: 150.0,
+          // width: 300.0,
+          // margin: EdgeInsets.only(top:20.0),
+          padding: EdgeInsets.all(15.0),
           color: Colors.redAccent,
-          child: Text("Hello. This is Syed Ashiq. I'm learning mobile application development. My chosing programe is Flutter framwork by DART"),
+          child: Text("Hello. This is Syed Ashiq. I'm learning mobile application development. My chosing programe is Flutter framwork by DART."),
           ),
         ),
       )
