@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
-void main() {
+void main (){
   runApp(MyApp());
 }
 
-
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,10 +23,8 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-      ),
+      )
     );
   }
 }
-
-//Flutter 2.5.3 • channel stable
-//Dart SDK version: 2.14.4 (stable)
+//Office pc need to update Flutter and Dart Version
