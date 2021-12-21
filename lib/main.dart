@@ -42,9 +42,7 @@ class MyApp extends StatelessWidget {
                   width: 100.0,
                   color: Colors.green[400],
                 ),
-              
               ],),
-              
             ),
             Container(
               height: 100.0,
@@ -54,6 +52,7 @@ class MyApp extends StatelessWidget {
             ],
         ),
       ),
-    ));
+    ),
+    );
   }
 }
