@@ -11,10 +11,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.teal,
         appBar: AppBar(
           title: Center(child: Text('MiCard')),
         ),
         body: SafeArea(
+          
           // child: Container(
           //   child: Image(image: AssetImage('images/ashiq.png'),),
           // ),
@@ -22,6 +24,14 @@ class MyApp extends StatelessWidget {
           CircleAvatar(
             radius: 70.0,
             backgroundImage: AssetImage('images/ashiq.png'),
+          ),
+          Text(
+            'Syed Ashiq',
+            style: TextStyle(
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
           ),
           ],),
         ),
