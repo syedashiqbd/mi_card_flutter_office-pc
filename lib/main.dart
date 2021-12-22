@@ -14,7 +14,8 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         
         body: SafeArea(
-          child: Column(children:<Widget> [
+          child: Column(
+            children:<Widget> [
           CircleAvatar(
             radius: 70.0,
             backgroundImage: AssetImage('images/ashiq.png'),
