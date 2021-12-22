@@ -13,29 +13,38 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         
-        body: Center(
-          child: SafeArea(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children:<Widget> [
-            CircleAvatar(
-              radius: 70.0,
-              backgroundImage: AssetImage('images/ashiq.png'),
+        body: SafeArea(
+          child: Column(
+            children:<Widget> [
+          CircleAvatar(
+            radius: 70.0,
+            backgroundImage: AssetImage('images/ashiq.png'),
+          ),
+          Text(
+            'Syed Ashiq',
+            style: TextStyle(
+              fontFamily:'Pacifico',
+              fontSize: 40.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
             ),
-            Text(
-              'Syed Ashiq',
-              style: TextStyle(
-                fontFamily:'Pacifico',
-                fontSize: 30.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-              ),
+          ),
+          Text(
+            'FLUTTER DEVELOPER',
+            style: TextStyle(
+              fontFamily: 'Source Sans Pro',
+              color: Colors.teal.shade100,
+              fontSize: 20.0,
+              letterSpacing: 2.5,
+              fontWeight: FontWeight.bold,
             ),
-            ],
-            ),
+          ),
+          ],
+          //implement based on video No.46
           ),
         ),
       ),
     );
   }
 }
+
