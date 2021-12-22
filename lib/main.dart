@@ -12,14 +12,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
-        appBar: AppBar(
-          title: Center(child: Text('MiCard')),
-        ),
+        
         body: SafeArea(
-          
-          // child: Container(
-          //   child: Image(image: AssetImage('images/ashiq.png'),),
-          // ),
           child: Column(children:<Widget> [
           CircleAvatar(
             radius: 70.0,
