@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main (){
+void main() {
   runApp(MyApp());
 }
 
@@ -10,52 +10,81 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-          
-      // appBar: AppBar(
-      //   title: Center(
-      //     child: Text('Syed Ashiqur Rahman'),
-      //   ),
-      // ),
-      backgroundColor:Colors.teal,
-      body: SafeArea(
-        child: Row(
-          mainAxisAlignment:MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Container(
-              height: 100.0,
-              width: 100.0,
-              color: Colors.red,
+      home: Scaffold(
+        backgroundColor: Colors.teal,
+        
+        body: SafeArea(
+          child: Column(
+            children:<Widget> [
+          CircleAvatar(
+            radius: 70.0,
+            backgroundImage: AssetImage('images/ashiq.png'),
+          ),
+          Text(
+            'Syed Ashiq',
+            style: TextStyle(
+              fontFamily:'Pacifico',
+              fontSize: 40.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
             ),
-            Container(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                  Container(
-                  height: 100.0,
-                  width: 100.0,
-                  color: Colors.yellow,
-                ),
-                SizedBox(
-                  height: 20.0,
-                ),
-                  Container(
-                  height: 100.0,
-                  width: 100.0,
-                  color: Colors.green[400],
-                ),
-              ],),
+          ),
+          Text(
+            'FLUTTER DEVELOPER',
+            style: TextStyle(
+              fontFamily: 'Source Sans Pro',
+              color: Colors.teal.shade100,
+              fontSize: 20.0,
+              letterSpacing: 2.5,
+              fontWeight: FontWeight.bold,
             ),
-            Container(
-              height: 100.0,
-              width: 100.0,
-              color: Colors.blue,
-            ),
-            ],
+          ),
+             Container(
+               color: Colors.white,
+               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 30.0),
+               padding: EdgeInsets.all(10.0),
+               child: Row(children:<Widget>[
+                 Icon(
+                   Icons.phone,
+                   color: Colors.teal,
+                   ),
+                   SizedBox(
+                     width: 15.0,
+                   ),
+                 Text(
+                   '+88 017 84 96 80 80',
+                   style: TextStyle(
+                     color: Colors.teal.shade900,
+                     fontSize: 20.0,
+                     fontFamily: 'Source Sans Pro',
+                   ),
+                 )
+               ],),
+             ),
+             Container(
+               color: Colors.white,
+               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 30.0),
+               padding: EdgeInsets.all(10.0),
+               child: Row(
+                 children:<Widget> [
+                   Icon(Icons.email, color: Colors.teal,),
+                   SizedBox(
+                     width: 15.0,
+                   ),
+                   Text('imsyedashiq@gmail.com',
+                   style: TextStyle(
+                     fontFamily: 'Source Sans Pro',
+                     fontSize: 20.0,
+                     color:Colors.teal.shade900,
+                   ),)
+                 ],
+               ),
+             )
+          ],
+          ),
         ),
-      )
+      ),
     );
   }
 }
-//Office pc need to update Flutter and Dart Version
+
